@@ -31,9 +31,9 @@ MATCHSTR="The number of files are ${NUMFILES} and the number of matching lines a
 echo "Performing make clean"
 # Go into the finder-app directory to run make
 cd "$(dirname "$0")"
-make clean
+#make clean
 # Compile the writer application natively
-make
+#make
 echo "Writing ${NUMFILES} files containing string ${WRITESTR} to ${WRITEDIR}"
 
 rm -rf "${WRITEDIR}"
